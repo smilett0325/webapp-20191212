@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div data-role="header" style="overflow: hidden;">
+        <h1>I'm a header</h1>
+        <a data-icon="home" class="ui-btn-left" onclick="javascript:location.href='MainPage.html'">主頁</a>
+    </div>
+    <div id="mainContent" style="width: 95%; margin:0 auto;">
+        <div class="row ui-field-contain" style="text-align: right;">
+            <label for="select-native-1" class="col-3">類別</label>
+            <select name="noteType" id="select-native-1" class="col-7">
+                <option value="work">公事</option>
+                <option value="family">家事</option>
+                <option value="friend">朋友</option>
+                <option value="other">其他</option>
+            </select>
+        </div>
+        <div class="ui-field-contain" style="text-align: right;">
+            <label for="textinput-1">Title:</label>
+            <input type="text" name="title" id="textinput-1" placeholder="Text input" value="">    
+        </div>
+        <div class="ui-field-contain">
+            <label for="textarea-1" style="text-align: right;">Textarea:</label>
+            <textarea  cols="40" rows="8" name="description" id="textarea-1">Textarea</textarea>
+        </div>
+    </div>
+    <script>app.initialize();</script>
+</body>
+</html>
